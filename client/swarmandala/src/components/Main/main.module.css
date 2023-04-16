@@ -1,0 +1,132 @@
+.masterContainer {
+  margin-top: 10px;
+  width: 99vw;
+  height: 30dvh;
+  background-color: var(--second-background-color);
+  position: fixed;
+  bottom: 0px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+}
+@media (max-width: 600px) {
+  .masterContainer {
+    width: 100vw;
+    /* flex-direction: column; */
+    /* height: fit-content; */
+    /* position: relative; */
+  }
+  .masterContainer__right {
+    display: none;
+  }
+  .masterContainer__left {
+    position: relative;
+    /* z-index: 10; */
+    /* height: 600px; */
+    /* width: 100vw; */
+  }
+  .playerContainer {
+    width: 95vw;
+    margin-left: 1px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .masterContainer {
+    margin-top: 10px;
+    width: 99vw;
+    height: 45%;
+    background-color: var(--second-background-color);
+    /* background-color: azure; */
+    position: fixed;
+    bottom: 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+  }
+}
+.masterContainer__left {
+  width: 40%;
+  height: 90%;
+  background-color: rgb(253, 253, 253);
+}
+.masterContainer__right {
+  width: 50%;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+
+  margin: 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.icon {
+  font-size: 10rem;
+  color: blueviolet;
+  visibility: 0.3;
+}
+.masterContainer:hover .icon {
+  visibility: 0;
+}
+
+.playerContainer {
+  height: 100%;
+}
+.sliderContainer {
+  overflow-y: scroll;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  height: 100%;
+}
+.right_info {
+  margin: 1rem;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+  color: rgb(0, 0, 0);
+  font-family: Jacques Francois, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  /* font-size: calc(1rem + 1vw); */
+  line-height: 2.5rem;
+}
+.song_title {
+  font-size: x-large;
+  font-weight: bold;
+}
+.raga_name {
+  background-color: var(--second-background-color);
+  padding: 0rem 1rem;
+  border-radius: 10px;
+  color: aliceblue;
+  margin-left: 2rem;
+  width: max-content;
+  height: max-content;
+}
+.ragaDescription {
+  padding: 0px 5%;
+  font-size: 1.5rem;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+/* @media (min-width: 0px) {
+  .right_info {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .right_info {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
+@media (min-width: 1001px) {
+  .right_info {
+    font-size: 1.75rem;
+  }
+} */
