@@ -1,0 +1,55 @@
+/* Color Theme Swatches in Hex */
+:root{
+  --main-background-color:#253659,
+  --second-background-color:#03a696,
+  
+}
+.MOBILE-EXXON-1-hex {
+  color: #253659;
+}
+.MOBILE-EXXON-2-hex {
+  color: #03a696;
+}
+.MOBILE-EXXON-3-hex {
+  color: #04bf9d;
+}
+.MOBILE-EXXON-4-hex {
+  color: #f27457;
+}
+.MOBILE-EXXON-5-hex {
+  color: #bf665e;
+}
+
+/* Color Theme Swatches in RGBA */
+.MOBILE-EXXON-1-rgba {
+  color: rgba(36, 54, 89, 1);
+}
+.MOBILE-EXXON-2-rgba {
+  color: rgba(3, 165, 149, 1);
+}
+.MOBILE-EXXON-3-rgba {
+  color: rgba(3, 191, 156, 1);
+}
+.MOBILE-EXXON-4-rgba {
+  color: rgba(242, 115, 87, 1);
+}
+.MOBILE-EXXON-5-rgba {
+  color: rgba(191, 101, 93, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.MOBILE-EXXON-1-hsla {
+  color: hsla(219, 41, 24, 1);
+}
+.MOBILE-EXXON-2-hsla {
+  color: hsla(174, 96, 33, 1);
+}
+.MOBILE-EXXON-3-hsla {
+  color: hsla(168, 96, 38, 1);
+}
+.MOBILE-EXXON-4-hsla {
+  color: hsla(11, 85, 64, 1);
+}
+.MOBILE-EXXON-5-hsla {
+  color: hsla(5, 43, 55, 1);
+}

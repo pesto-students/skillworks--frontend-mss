@@ -1,0 +1,92 @@
+.card_container {
+  min-width: 200px;
+  width: 5vw;
+  height: 90%;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.card_container:hover .card_text {
+  animation: move-text 10s linear infinite;
+  white-space: nowrap;
+}
+.card_image {
+  object-fit: cover;
+}
+.main {
+  width: 100%;
+  max-height: min-content;
+  /* height: 500px; */
+  background: rgba(51, 65, 94, 0.5);
+  border-radius: 10px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+/* .main::before {
+  content: "Artists";
+  color: azure;
+  font-size: 1.05vw;
+  padding: 10px;
+} */
+.avatar {
+  background-color: black;
+  width: 150px; /* or any specific width in pixels or percentage */
+  aspect-ratio: 1; /* to maintain the aspect ratio of the image */
+  object-fit: contain; /* to cover the entire space of the container */
+  border-radius: 100%;
+}
+.card_text {
+  color: #ffff;
+  font-weight: 400;
+  font-size: 20px;
+  white-space: nowrap;
+
+  line-height: 24px;
+  /* width: 9vw; */
+}
+
+@keyframes move-text {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .avatar {
+    width: 50px;
+  }
+  .card_text {
+    color: #ffff;
+    font-weight: 200;
+    font-size: 15px;
+    /* white-space: nowrap; */
+    /* line-height: 24px; */
+    /* width: 9vw; */
+  }
+  .card_container {
+    min-width: 100px;
+    width: 5vw;
+    height: 90%;
+    /* padding: 10px; */
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 15%;
+  }
+}

@@ -1,0 +1,60 @@
+.container {
+  min-width: 200px;
+  width: 5vw;
+  height: 90%;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+.image {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 9px 9px 208px #c7c7c732, 2px 2px 18px #000000fd;
+  margin: 8%;
+}
+.image:hover {
+  box-shadow: 9px 9px 208px #c7c7c732, -2px -2px 28px #f9f9f975;
+}
+.raga_name {
+  color: #ffff;
+  font-weight: 400;
+  font-size: 20px;
+  white-space: nowrap;
+
+  line-height: 24px;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 80px;
+
+    width: 20%;
+    padding: 0px;
+    align-items: center;
+  }
+  .image {
+    width: 10vw;
+    /* margin: 0%; */
+  }
+  .raga_name {
+    font-size: 15px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 15%;
+  }
+}
